@@ -1,8 +1,18 @@
-# Dependencies
-node_modules/
-
-# Build output
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
 dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+
+# Node (container build tools)
+node_modules/
 
 # Local data & auth
 store/
@@ -21,6 +31,12 @@ groups/global/*
 # Secrets
 *.keys.json
 .env
+
+# SQLite
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
 
 # OS
 .DS_Store
